@@ -1,13 +1,9 @@
 {
   "name": "zstd.ts",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "TODO: add desc",
   "keywords": [],
-  "author": {
-    "name": "Beeno Tung",
-    "email": "aabbcc1241@yahoo.com.hk",
-    "url": "https://beeno-tung.surge.sh"
-  },
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
   "license": "BSD-2-Clause",
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/index.d.ts",
@@ -67,5 +63,13 @@
     "ts-node": "^10.2.1",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/zstd.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beenotung/zstd.ts/issues"
+  },
+  "homepage": "https://github.com/beenotung/zstd.ts#readme"
 }
