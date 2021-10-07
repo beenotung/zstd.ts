@@ -1,8 +1,15 @@
 {
   "name": "zstd.ts",
   "version": "0.0.0",
-  "description": "TODO: add desc",
-  "keywords": [],
+  "description": "compress and decompress using system-installed zstd and unzstd",
+  "keywords": [
+    "zstd",
+    "node",
+    "typescript",
+    "system",
+    "compress",
+    "decompress"
+  ],
   "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
   "license": "BSD-2-Clause",
   "main": "dist/cjs/index.js",
