@@ -91,13 +91,13 @@ export function decompressSync(options: DecompressSyncOptions): Buffer {
 
 export type DecompressOptions = DecompressSyncOptions
 
-export function decompress(options: DecompressSyncOptions): Promise<Buffer>
+export function decompress(options: DecompressOptions): Promise<Buffer>
 export function decompress(
-  options: DecompressSyncOptions,
+  options: DecompressOptions,
   callback: (error: any, buffer: Buffer) => void,
 ): void
 export function decompress(
-  options: DecompressSyncOptions,
+  options: DecompressOptions,
   maybeCallback?: (error: any, buffer: Buffer) => void,
 ): Promise<Buffer> | void {
   if (!maybeCallback) {
