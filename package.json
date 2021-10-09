@@ -19,7 +19,6 @@
   "scripts": {
     "prepare": "run-p prepare:*",
     "prepare:husky": "husky install",
-    "prepare:tslib": "rimraf node_modules/@beenotung/tslib/index.*",
     "clean": "rimraf dist",
     "format": "run-s format:*",
     "format:prettier": "prettier --write .",
@@ -43,7 +42,6 @@
     "dist"
   ],
   "dependencies": {
-    "@beenotung/tslib": "^17.7.2",
     "tslib": "^2.3.1"
   },
   "devDependencies": {
