@@ -12,6 +12,47 @@ compress and decompress using system-installed zstd and unzstd
 - [x] Tested with mocha
 - [x] No dependency on other packages
 
+# Usage Example
+
+```typescript
+import { compress, decompress } from 'zstd.ts'
+import { compressSync, decompressSync } from 'zstd.ts'
+
+let compressed: Buffer = compressSync({ input: 'test' })
+let uncompressed: Buffer = decompressSync({ input: compressed })
+let matched = uncompressed.toString() == 'test'
+console.log(matched) // true
+```
+
+# Typescript Signature
+
+```typescript
+export type CompressOptions = {
+  compressLevel?: number // range: 1 - 19 (default level is 3)
+  input: string | Buffer
+}
+
+export function compressSync(options: CompressOptions): Buffer
+
+export function compress(options: CompressOptions): Promise<Buffer>
+export function compress(
+  options: CompressOptions,
+  callback: (error: any, buffer: Buffer) => void,
+): void
+
+export type DecompressOptions = {
+  input: Buffer
+}
+
+export function decompressSync(options: DecompressOptions): Buffer
+
+export function decompress(options: DecompressOptions): Promise<Buffer>
+export function decompress(
+  options: DecompressOptions,
+  callback: (error: any, buffer: Buffer) => void,
+): void
+```
+
 ## License
 
 This project is licensed with [BSD-2-Clause](./LICENSE)
