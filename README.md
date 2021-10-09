@@ -8,7 +8,7 @@ compress and decompress using system-installed zstd and unzstd
 
 - [x] Typescript support
 - [x] Support sync mode
-- [ ] Support async mode
+- [x] Support async mode
 - [x] Tested with mocha
 - [x] No dependency on other packages
 
